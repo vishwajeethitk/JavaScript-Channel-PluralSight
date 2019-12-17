@@ -1,6 +1,3 @@
-var repo = require('./file2.js')();
-console.log(repo.getData());
-
 var funcs = function() {
     var data = "data";
     var setData =  function(data1) {
@@ -9,13 +6,16 @@ var funcs = function() {
     var viewData = function() {
         console.log(data);
     }
-    console.log('new funcs2 created' );
-    //console.log(repo);
+    var getData = function() {
+        return data;
+    }
+    console.log('new funcs created');
 
     return {
         setData: setData,
-        viewData: viewData
+        viewData: viewData,
+        getData: getData
     }
 }
 
-module.exports = funcs;
+module.exports = new funcs;

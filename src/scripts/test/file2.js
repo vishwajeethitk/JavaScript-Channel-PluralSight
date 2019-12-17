@@ -18,4 +18,4 @@ var funcs = function() {
     }
 }
 
-module.exports = funcs();
+module.exports = funcs;
