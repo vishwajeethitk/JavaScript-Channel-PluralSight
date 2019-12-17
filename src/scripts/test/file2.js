@@ -6,12 +6,16 @@ var funcs = function() {
     var viewData = function() {
         console.log(data);
     }
+    var getData = function() {
+        return data;
+    }
     console.log('new funcs created');
 
     return {
         setData: setData,
-        viewData: viewData
+        viewData: viewData,
+        getData: getData
     }
 }
 
-module.exports = funcs;
+module.exports = funcs();
