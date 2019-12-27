@@ -69,7 +69,7 @@ var completed = [true, false];
 
 var initialMemory = process.memoryUsage().heapUsed;
 
-for(var i=0; i<100000; i++) {
+for(var i=0; i<1000000; i++) {
     tasks.add({
         name: 'task' + i,
         priority: priorities[Math.floor(Math.random() * 5)],
