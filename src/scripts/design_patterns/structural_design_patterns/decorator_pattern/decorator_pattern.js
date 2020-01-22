@@ -29,6 +29,7 @@ UrgentTask.prototype.notify = function() {
 }
 
 UrgentTask.prototype.save = function() {
+    this.notify();
     console.log('do special stuff before saving');
     Task.prototype.save.call(this);
 }
